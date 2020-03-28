@@ -65,7 +65,11 @@ input[type="text"]:focus, input[type="password"]:focus{
   transition: box-shadow 0.2s ease;
 }
 
-.loginForm td input[type="button"] {
+.loginForm p {
+  font-size: 1.2rem;
+}
+
+.btnLogin {
   position: relative;
   border: 0;
   outline: 0;
@@ -79,6 +83,6 @@ input[type="text"]:focus, input[type="password"]:focus{
   box-sizing: border-box;
 }
 
-.loginForm p {
-  font-size: 1.2rem;
+.btnLogin:active {
+  background-color: #0b385f;
 }

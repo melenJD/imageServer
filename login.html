@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
-  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="./css/common.css">
 </head>
 <body>
   <div class="content">
-    <form action="post" class="loginForm" action="/php/login.php">
+    <form class="loginForm" action="./php/login.php" method="POST">
       <h1>Login</h1>
       <table>
         <tbody>
@@ -19,13 +19,12 @@
             <td><input tabindex="2" type="password" name="userpwd" id="userpwd" placeholder="비밀번호를 입력해주세요"></td>
           </tr>
           <tr>
-            <td><input type="button" value="로그인" id="btnLogin"></td>
+            <td><input type="submit" value="로그인" class="btnLogin"></td>
           </tr>
         </tbody>
       </table>
       <p>이 페이지는 melen의 이미지 서버 로그인창입니다.</p>
     </form>
   </div>
-  <script src="/js/login.js"></script>
 </body>
 </html>
