@@ -4,23 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
+  <link rel="stylesheet" href="/css/common.css">
 </head>
 <body>
   <div class="content">
-    <form action="post" class="loginForm">
+    <form action="post" class="loginForm" action="/php/login.php">
+      <h1>Login</h1>
       <table>
         <tbody>
           <tr>
-            <td><input type="text" name="id" id="id" placeholder="아이디를 입력해주세요"></td>
-            <td rowspan="2"><input type="button" value="로그인"></td>
+            <td><input tabindex="1" type="text" name="userid" id="userid" placeholder="아이디를 입력해주세요" autocomplete="off"></td>
           </tr>
           <tr>
-            <td><input type="password" name="pw" id="pw" placeholder="비밀번호를 입력해주세요"></td>
+            <td><input tabindex="2" type="password" name="userpwd" id="userpwd" placeholder="비밀번호를 입력해주세요"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="로그인" id="btnLogin"></td>
           </tr>
         </tbody>
       </table>
+      <p>이 페이지는 melen의 이미지 서버 로그인창입니다.</p>
     </form>
-    <p>이 페이지는 melen의 이미지 서버 로그인창입니다.</p>
   </div>
+  <script src="/js/login.js"></script>
 </body>
 </html>
