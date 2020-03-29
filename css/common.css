@@ -5,6 +5,7 @@ html {
   height: 100%;
   font-size: 62.5%;
   font-family: 'Noto Sans KR';
+  -webkit-appearance: none;
 }
 
 body {
@@ -56,6 +57,8 @@ input[type="text"], input[type="password"] {
   transition: border-bottom 0.2s ease;
   transition: box-shadow 0.2s ease;
   border-radius: 1rem;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 
 input[type="text"]:focus, input[type="password"]:focus{
@@ -63,6 +66,8 @@ input[type="text"]:focus, input[type="password"]:focus{
   box-shadow: 0 0 0.5rem rgba(15,76,129);
   transition: border-bottom 0.2s ease;
   transition: box-shadow 0.2s ease;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 
 .loginForm p {

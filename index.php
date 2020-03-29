@@ -8,5 +8,7 @@
 
   if(!isset($_SESSION['userid'])) {
     header('Location: ./login.html');
+  }else{
+    header('Location: ./php/main.php');
   }
 ?>

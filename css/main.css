@@ -1,0 +1,129 @@
+html, body {
+  margin :0;
+  font-size: 62.5%;
+}
+body {
+  background-color: #0F4C81;
+}
+
+a {
+  color: #0F4C81;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+.background {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.3);
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.images {
+  width: 20rem;
+  resize: both;
+}
+
+.uiButton {
+  background-color: #0F4C81;
+  color: white;
+  padding: 1rem 2rem;
+  margin: 0 1rem;
+  border: 0;
+  border-radius: 1rem;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.op {
+  background-color: #0F4C81;
+  border: 0;
+  outline: 0;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 40rem;
+}
+
+.container {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 3rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 10rem;
+}
+
+td {
+  padding: 0.5rem;
+  border: 0.1rem solid #dfdfdf;
+  font-size: 1.4rem;
+  word-break: break-all;
+}
+
+.menus {
+  position: fixed;
+  top: 10rem;
+  left: 50%;
+  transform: translate(-320%);
+  width: 7rem;
+  background-color: white;
+  padding: 2rem 2rem;
+  border-radius: 1rem;
+}
+
+.freeview {
+  width: 20rem;
+}
+
+.upFolder {
+  color: grey;
+}
+
+#createFolderUi, #imageUploadUi {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: fit-content;
+  padding: 2rem;
+  box-shadow: 0 0 1rem grey;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+#createFolderUi h1, #imageUploadUi h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+#createFolderUi input[type="text"], #imageUploadUi input[type="file"]  {
+  width: 40rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 0.1rem solid #dfdfdf;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+button, input[type="button"], input[type="submit"] {
+  outline: 0;
+}
