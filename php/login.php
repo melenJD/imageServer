@@ -1,7 +1,7 @@
 <?php
   session_start();
 
-  $connect = mysqli_connect('localhost', 'admin_image', '!Rkawk135', 'admin_image-melen');
+  $connect = mysqli_connect();
 
   $id=$_POST['userid'];
   $pw=$_POST['userpwd'];
